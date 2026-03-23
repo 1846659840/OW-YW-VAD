@@ -1,0 +1,19 @@
+objects:
+  - person
+  - bicycle
+  - car
+  - bag
+  - fire
+  - smoke
+states:
+  - person running
+  - person lying on ground
+  - person climbing
+  - fast vehicle
+rules:
+  - wrong direction
+  - loitering
+  - crowd gathering
+  - restricted area
+  - object left behind
+

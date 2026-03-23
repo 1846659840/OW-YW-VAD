@@ -1,0 +1,73 @@
+run:
+  name: paper_main
+  seed: 7
+  device: cpu
+  mixed_precision: true
+  num_workers: 0
+
+paths:
+  raw_data: data/raw
+  processed_data: data/processed
+  cache_data: data/cache
+  outputs: outputs
+  external: external
+  baselines_csv: baseline_results.csv
+
+datasets:
+  stage2: shanghaitech
+  stage3: ubnormal
+  stage4: ucf_crime
+  all:
+    - ubnormal
+    - shanghaitech
+    - ucf_crime
+
+prompts:
+  file: configs/prompts/default.yaml
+
+model:
+  fps: 12
+  input_size: [640, 640]
+  num_known_classes: 3
+  trajectory_length: 16
+  tcn_dilations: [1, 2, 4]
+  hidden_dim: 256
+  memory_prototypes: 512
+  memory_neighbors: 5
+  uncertainty_temperature: 0.5
+  memory_temperature: 0.07
+  fusion_weights:
+    alpha: 0.4
+    beta: 0.25
+    gamma: 0.2
+    delta: 0.15
+  decision_thresholds:
+    tau_a: 0.5
+    tau_c: 0.6
+
+optimizer:
+  name: AdamW
+  lr: 0.0001
+  weight_decay: 0.0001
+  batch_size: 16
+  grad_clip: 5.0
+  warmup_epochs: 3
+
+tracker:
+  high_conf: 0.6
+  low_conf: 0.1
+  matching_threshold: 0.8
+
+training:
+  stage2_epochs: 20
+  stage3_epochs: 30
+  stage4_epochs: 20
+  mil_pooling: top1
+  ucf_segments: 32
+  loss_weights:
+    lambda1: 1.0
+    lambda2: 1.0
+    lambda3: 0.1
+    lambda4: 0.5
+    lambda5: 0.2
+

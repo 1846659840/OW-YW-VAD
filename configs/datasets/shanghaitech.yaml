@@ -1,0 +1,7 @@
+name: shanghaitech
+description: Frame-level and pixel-level anomaly detection benchmark.
+official_homepage: https://svip-lab.github.io/dataset/campus_dataset.html
+split_protocol: Standard training normal-only and annotated test split
+manual_download: true
+expected_splits: [train, test]
+

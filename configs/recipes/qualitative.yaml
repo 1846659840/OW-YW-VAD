@@ -1,0 +1,6 @@
+recipe: qualitative
+targets:
+  - ubnormal
+  - shanghaitech
+  - ucf_crime
+

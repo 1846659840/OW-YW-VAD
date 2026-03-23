@@ -1,0 +1,6 @@
+recipe: hyperparameter
+targets:
+  - memory_bank
+  - temporal_dynamic
+  - joint_objective
+

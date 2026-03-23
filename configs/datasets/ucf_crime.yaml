@@ -1,0 +1,7 @@
+name: ucf_crime
+description: Long-video weakly supervised anomaly detection benchmark.
+official_homepage: https://www.crcv.ucf.edu/projects/real-world/
+split_protocol: Standard train/test split with video-level training labels
+manual_download: true
+expected_splits: [train, test]
+

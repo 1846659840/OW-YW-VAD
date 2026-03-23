@@ -1,0 +1,16 @@
+method,year,ubnormal_micro_auc,shanghaitech_frame_auc,ucf_crime_frame_auc,source
+MIL Ranking,2018,50.30,86.30,75.41,Sultani et al. 2018 / follow-up benchmark tables
+HF2-VAD,2021,,76.20,,Liu et al. 2021
+RTFM,2021,60.94,97.21,84.30,Tian et al. 2021
+MIST,2021,,94.83,82.30,Feng et al. 2021
+Unbiased MIL,2023,,,86.75,Lv et al. 2023
+VadCLIP,2023,,,88.02,Wu et al. 2023
+OVVAD,2024,62.94,,86.40,Wu et al. 2024
+DAKD,2025,,98.10,88.34,Dalvi et al. 2025
+Action Hints,2025,74.50,84.10,62.70,Tang et al. 2025
+AnyAnomaly,2025,74.50,79.70,80.70,Ahn et al. 2025
+ProDisc-VAD,2025,,97.98,87.12,Zhu et al. 2025
+PA-VAD,2025,,98.20,82.50,Hashimoto et al. 2025
+DeSC,2026,,,89.37,Zheng et al. 2026
+MM-VAD,2026,,96.95,83.24,Zia et al. 2026
+

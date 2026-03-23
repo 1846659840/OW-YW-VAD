@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "owywvad"
+version = "0.1.0"
+description = "Executable reference implementation of OW-YW-VAD"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+  {name = "Youxi Li"},
+  {name = "Xiangjun Chen"},
+  {name = "Liming Wang"},
+  {name = "Xiaocheng Huang"},
+  {name = "Qiang Liu"}
+]
+maintainers = [
+  {name = "Youxi Li", email = "liyouxi2010@gmail.com"}
+]
+dependencies = [
+  "numpy>=1.26",
+  "torch>=2.1",
+  "PyYAML>=6.0",
+  "pydantic>=2.7",
+  "matplotlib>=3.8"
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0"
+]
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+include = ["owywvad*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

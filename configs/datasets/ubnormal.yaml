@@ -1,0 +1,7 @@
+name: ubnormal
+description: Open-set supervised anomaly detection benchmark.
+official_homepage: https://www.crcv.ucf.edu/UBnormal/
+split_protocol: Official train/val/test open-set protocol
+manual_download: true
+expected_splits: [train, val, test]
+

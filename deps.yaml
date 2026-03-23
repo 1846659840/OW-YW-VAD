@@ -1,0 +1,12 @@
+dependencies:
+  yoloworld:
+    repo: https://github.com/AILab-CVC/YOLO-World.git
+    commit: 4f70adbaacf5685bd9ec5bea85f1f91057f6fc0b
+    target_dir: external/YOLO-World
+    note: Official open-vocabulary detector dependency used through a local wrapper.
+  bytetrack:
+    repo: https://github.com/ifzhang/ByteTrack.git
+    commit: d1bf0191adff59bc8fcfeaa0b33d3d1642552a99
+    target_dir: external/ByteTrack
+    note: Official tracker dependency used through a local wrapper.
+

@@ -1,0 +1,8 @@
+recipe: paper_main
+description: Full paper reproduction recipe with stage-wise training and evaluation.
+include:
+  - comparison_table
+  - ablation
+  - hyperparameter
+  - qualitative
+
